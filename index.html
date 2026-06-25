@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="facebook-domain-verification" content="z7o78ublkr5pvwd53ukjfuwm7tdzu0" />
+  <title>Maria Lucimar da Silva | Cabeleireira</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --rosa: #6b2d4e;
+      --rosa-claro: #9b4a72;
+      --creme: #fdf6f0;
+      --dourado: #c8956b;
+      --texto: #1c1c1c;
+      --cinza: #6b6b6b;
+      --borda: #e8ddd6;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--creme);
+      color: var(--texto);
+      line-height: 1.6;
+    }
+
+    nav {
+      background: var(--rosa);
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      color: var(--creme);
+      font-size: 1.2rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a {
+      color: rgba(253,246,240,0.8);
+      text-decoration: none;
+      font-size: 0.85rem;
+      letter-spacing: 0.04em;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--dourado); }
+
+    .hero {
+      background: var(--rosa);
+      padding: 5rem 2rem 4rem;
+      text-align: center;
+    }
+    .hero-eyebrow {
+      color: var(--dourado);
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 1.2rem;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      color: var(--creme);
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 700;
+      line-height: 1.15;
+      max-width: 650px;
+      margin: 0 auto 1.5rem;
+    }
+    .hero p {
+      color: rgba(253,246,240,0.75);
+      max-width: 500px;
+      margin: 0 auto 2.5rem;
+      font-size: 1rem;
+      font-weight: 300;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--dourado);
+      color: #fff;
+      font-weight: 500;
+      font-size: 0.9rem;
+      padding: 0.8rem 2rem;
+      border-radius: 2px;
+      text-decoration: none;
+      letter-spacing: 0.03em;
+      transition: opacity 0.2s;
+    }
+    .btn:hover { opacity: 0.88; }
+
+    section { padding: 4rem 2rem; max-width: 900px; margin: 0 auto; }
+    section + section { border-top: 1px solid var(--borda); }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: var(--rosa);
+      margin-bottom: 1rem;
+    }
+    h3 {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--rosa-claro);
+      margin-bottom: 0.4rem;
+    }
+    p { color: var(--cinza); margin-bottom: 1rem; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid var(--borda);
+      padding: 1.5rem;
+      border-radius: 4px;
+    }
+    .card-icon { font-size: 1.8rem; margin-bottom: 0.8rem; }
+
+    .contato-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .contato-item { display: flex; flex-direction: column; gap: 0.3rem; }
+    .contato-label { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dourado); }
+    .contato-value { font-size: 0.95rem; color: var(--texto); }
+
+    .doc-content h3 { margin-top: 1.5rem; margin-bottom: 0.4rem; font-size: 1rem; color: var(--rosa); }
+    .doc-content p { font-size: 0.92rem; }
+    .doc-content ul { padding-left: 1.2rem; color: var(--cinza); font-size: 0.92rem; margin-bottom: 1rem; }
+    .doc-content ul li { margin-bottom: 0.4rem; }
+
+    footer {
+      background: var(--rosa);
+      color: rgba(253,246,240,0.6);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.82rem;
+    }
+    footer strong { color: var(--creme); }
+
+    @media (max-width: 600px) {
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="#inicio">Maria Lucimar da Silva</a>
+  <ul class="nav-links">
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#contato">Contato</a></li>
+    <li><a href="#privacidade">Privacidade</a></li>
+    <li><a href="#termos">Termos</a></li>
+  </ul>
+</nav>
+
+<div class="hero" id="inicio">
+  <p class="hero-eyebrow">Cabeleireira · Maricá, RJ</p>
+  <h1>Beleza e cuidado com quem entende do seu cabelo</h1>
+  <p>Maria Lucimar da Silva oferece serviços de cabeleireira com atenção personalizada, técnica e carinho em cada atendimento.</p>
+  <a href="#contato" class="btn">Agende seu horário</a>
+</div>
+
+<section id="sobre">
+  <h2>Sobre nós</h2>
+  <p>Maria Lucimar da Silva é profissional autônoma de cabeleireira, registrada sob o CNPJ 15.698.198/0001-04, com atuação em Maricá, RJ. Oferece atendimentos personalizados para cortes, coloração, tratamentos capilares e serviços relacionados à beleza e estética capilar.</p>
+  <p>Com foco na qualidade do atendimento e no bem-estar das clientes, cada serviço é realizado com dedicação e profissionalismo.</p>
+
+  <div class="cards">
+    <div class="card">
+      <div class="card-icon">✂️</div>
+      <h3>Experiência profissional</h3>
+      <p>Anos de prática em técnicas de corte, coloração e tratamento capilar para diferentes tipos de cabelo.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">💆‍♀️</div>
+      <h3>Atendimento personalizado</h3>
+      <p>Cada cliente recebe atenção individualizada, com serviços adaptados às suas necessidades e estilo.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🌿</div>
+      <h3>Produtos de qualidade</h3>
+      <p>Utilizamos produtos selecionados para garantir saúde, brilho e resultados duradouros.</p>
+    </div>
+  </div>
+</section>
+
+<section id="servicos">
+  <h2>Serviços</h2>
+  <p>Oferecemos uma variedade de serviços capilares para atender às necessidades de cada cliente:</p>
+  <div class="cards">
+    <div class="card">
+      <div class="card-icon">✂️</div>
+      <h3>Cortes</h3>
+      <p>Cortes femininos e infantis adaptados ao formato do rosto e preferência da cliente.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🎨</div>
+      <h3>Coloração e mechas</h3>
+      <p>Coloração completa, luzes, mechas e técnicas modernas de balayage e ombré hair.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">💧</div>
+      <h3>Tratamentos capilares</h3>
+      <p>Hidratação, reconstrução, progressiva e outros tratamentos para restaurar a saúde dos fios.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">💫</div>
+      <h3>Escova e finalização</h3>
+      <p>Escova modeladora, babyliss e finalização para ocasiões especiais ou uso diário.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <h2>Contato</h2>
+  <p>Entre em contato para agendar seu horário ou tirar dúvidas sobre os serviços.</p>
+  <div class="contato-grid">
+    <div class="contato-item">
+      <span class="contato-label">E-mail</span>
+      <span class="contato-value">luciamarsilvadruz498@gmail.com</span>
+    </div>
+    <div class="contato-item">
+      <span class="contato-label">Telefone</span>
+      <span class="contato-value">(47) 96427-0576</span>
+    </div>
+    <div class="contato-item">
+      <span class="contato-label">Endereço</span>
+      <span class="contato-value">R. das Rosas, 56 – Quadra 06 Lote 56<br>Calaboca (Inoa) – Maricá, RJ<br>CEP 24.944-035</span>
+    </div>
+    <div class="contato-item">
+      <span class="contato-label">CNPJ</span>
+      <span class="contato-value">15.698.198/0001-04</span>
+    </div>
+  </div>
+</section>
+
+<section id="privacidade">
+  <h2>Política de Privacidade</h2>
+  <p><em>Última atualização: junho de 2025</em></p>
+  <div class="doc-content">
+    <p>Maria Lucimar da Silva, inscrita sob o CNPJ 15.698.198/0001-04, está comprometida com a proteção dos dados pessoais de seus clientes e visitantes, em conformidade com a Lei Geral de Proteção de Dados (LGPD – Lei nº 13.709/2018).</p>
+
+    <h3>1. Dados coletados</h3>
+    <ul>
+      <li>Nome completo</li>
+      <li>Endereço de e-mail</li>
+      <li>Número de telefone</li>
+      <li>Dados de navegação (cookies e logs de acesso)</li>
+    </ul>
+
+    <h3>2. Finalidade do uso dos dados</h3>
+    <ul>
+      <li>Agendamento e confirmação de atendimentos</li>
+      <li>Comunicação sobre serviços e promoções</li>
+      <li>Cumprimento de obrigações legais e fiscais</li>
+    </ul>
+
+    <h3>3. Compartilhamento de dados</h3>
+    <p>Não vendemos, alugamos ou compartilhamos seus dados pessoais com terceiros para fins comerciais, exceto quando exigido por lei.</p>
+
+    <h3>4. Armazenamento e segurança</h3>
+    <p>Seus dados são armazenados em ambiente seguro. Adotamos medidas técnicas e administrativas para prevenir acessos não autorizados.</p>
+
+    <h3>5. Direitos do titular</h3>
+    <p>Você pode acessar, corrigir ou solicitar a exclusão dos seus dados a qualquer momento pelo e-mail luciamarsilvadruz498@gmail.com.</p>
+
+    <h3>6. Cookies</h3>
+    <p>Este site pode utilizar cookies para melhorar a experiência de navegação. Você pode desativá-los nas configurações do seu navegador.</p>
+
+    <h3>7. Contato</h3>
+    <p>luciamarsilvadruz498@gmail.com</p>
+  </div>
+</section>
+
+<section id="termos">
+  <h2>Termos de Uso</h2>
+  <p><em>Última atualização: junho de 2025</em></p>
+  <div class="doc-content">
+    <p>Ao acessar este site, você concorda com os termos e condições descritos abaixo.</p>
+
+    <h3>1. Uso do site</h3>
+    <p>Este site tem caráter institucional e informativo, representando os serviços de cabeleireira de Maria Lucimar da Silva, com sede em Maricá, RJ.</p>
+
+    <h3>2. Propriedade intelectual</h3>
+    <p>Todo o conteúdo deste site é de propriedade de Maria Lucimar da Silva. É vedada a reprodução sem autorização prévia.</p>
+
+    <h3>3. Responsabilidades</h3>
+    <ul>
+      <li>Falhas técnicas de acesso ao site</li>
+      <li>Uso indevido das informações por terceiros</li>
+      <li>Danos decorrentes de vírus ou ataques externos</li>
+    </ul>
+
+    <h3>4. Alterações nos termos</h3>
+    <p>Estes termos podem ser atualizados a qualquer momento. Recomendamos a consulta periódica desta página.</p>
+
+    <h3>5. Foro</h3>
+    <p>Fica eleito o foro da Comarca de Maricá, RJ, para dirimir quaisquer controvérsias decorrentes deste documento.</p>
+
+    <h3>6. Contato</h3>
+    <p>luciamarsilvadruz498@gmail.com</p>
+  </div>
+</section>
+
+<footer>
+  <p><strong>Maria Lucimar da Silva</strong> · CNPJ 15.698.198/0001-04</p>
+  <p style="margin-top:0.4rem">R. das Rosas, 56 – Quadra 06 Lote 56 · Calaboca (Inoa) · Maricá, RJ · CEP 24.944-035</p>
+  <p style="margin-top:0.4rem">luciamarsilvadruz498@gmail.com</p>
+</footer>
+
+</body>
+</html>
